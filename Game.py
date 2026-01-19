@@ -1,4 +1,4 @@
-
+from Score import Scoreget
 
 auth = []
 name = input("Enter your name")
