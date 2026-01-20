@@ -1,11 +1,13 @@
+from authen import auth_user,login
 from Score import Scoreget
 
 auth = []
 name = input("Enter your name")
 coins = int(input("Enter your coins"))
 level = int(input("Enter your level"))
-db = []
-auth.append(authen(name,coins,level,db))
+db = {}
+print(auth_user(name,coins,level,db))
+print(login(name,coins,level,db))
 
 failure_count = 0
 for i in range (0,3):
